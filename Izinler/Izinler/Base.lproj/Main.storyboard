@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HzZ-TI-F1M">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profil Oluştur-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfilOlust_rViewController" customModule="Izinler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profil oluştur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWk-E6-42N">
+                                <rect key="frame" x="148" y="144" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjb-aV-Hiy">
+                                <rect key="frame" x="144" y="281" width="105" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kamera aç"/>
+                                <connections>
+                                    <action selector="kameraAc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTJ-B2-uzf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil Oluştur" image="pencil" catalog="system" id="OoS-yR-INj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-310"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hhg-Ig-5cz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HzZ-TI-F1M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OYZ-cK-MIH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="8" bottom="0.0" trailing="8"/>
+                        <color key="barTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.63529413940000001" green="0.63137257099999999" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4gA-Zb-QSI"/>
+                        <segue destination="Tqb-yi-NmF" kind="relationship" relationship="viewControllers" id="eV8-zU-KaY"/>
+                        <segue destination="gGS-xz-SFu" kind="relationship" relationship="viewControllers" id="WsQ-BU-qMl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVC-L0-UYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Profi-->
+        <scene sceneID="HbM-Iz-VUj">
+            <objects>
+                <viewController id="Tqb-yi-NmF" customClass="ProfilViewController" customModule="Izinler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDD-vb-8hC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l6w-XE-VQ0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wol-ex-PgG">
+                                <rect key="frame" x="144" y="220" width="105" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kamera aç"/>
+                                <connections>
+                                    <action selector="kameraAcKontrol:" destination="Tqb-yi-NmF" eventType="touchUpInside" id="X9A-ud-evh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V4g-sY-kwk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l6w-XE-VQ0" firstAttribute="trailing" secondItem="V4g-sY-kwk" secondAttribute="trailing" id="Q85-Yq-iCc"/>
+                            <constraint firstAttribute="bottom" secondItem="l6w-XE-VQ0" secondAttribute="bottom" id="RNz-Np-gd6"/>
+                            <constraint firstItem="l6w-XE-VQ0" firstAttribute="leading" secondItem="V4g-sY-kwk" secondAttribute="leading" id="XVx-UN-39T"/>
+                            <constraint firstItem="l6w-XE-VQ0" firstAttribute="top" secondItem="xDD-vb-8hC" secondAttribute="top" id="t3b-mK-oLH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profi" image="person.crop.circle" catalog="system" id="RK3-Ap-qez"/>
+                    <connections>
+                        <outlet property="arkaPlanImage" destination="l6w-XE-VQ0" id="dC4-jc-k7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E42-oy-cgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935.1145038167939" y="345.77464788732397"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QhS-E8-xCl">
+            <objects>
+                <viewController id="gGS-xz-SFu" customClass="GaleriViewController" customModule="Izinler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PA3-nH-057">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gfd-fz-MKv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-rg-e4f">
+                                <rect key="frame" x="150" y="302" width="93" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Galeri Aç"/>
+                                <connections>
+                                    <action selector="gaeleriAcBtn:" destination="gGS-xz-SFu" eventType="touchUpInside" id="fwD-L5-636"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zHo-Rh-4u4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gfd-fz-MKv" firstAttribute="leading" secondItem="zHo-Rh-4u4" secondAttribute="leading" id="XR5-mA-Oh5"/>
+                            <constraint firstItem="zHo-Rh-4u4" firstAttribute="trailing" secondItem="gfd-fz-MKv" secondAttribute="trailing" id="dp2-gY-NG3"/>
+                            <constraint firstAttribute="bottom" secondItem="gfd-fz-MKv" secondAttribute="bottom" id="jty-S3-g8j"/>
+                            <constraint firstItem="gfd-fz-MKv" firstAttribute="top" secondItem="PA3-nH-057" secondAttribute="top" id="vfL-un-3P5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="folder" catalog="system" id="4hh-YV-bFG"/>
+                    <connections>
+                        <outlet property="galeriArkaPlan" destination="gfd-fz-MKv" id="DeE-nS-MiD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1SX-8h-pRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-831.29770992366412" y="-33.098591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
